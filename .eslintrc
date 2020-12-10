@@ -1,0 +1,67 @@
+
+{
+  "parser": "babel-eslint",
+  "extends": [
+    "airbnb",
+    "airbnb/hooks",
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:react-redux/recommended",
+    "plugin:jsx-a11y/recommended",
+    "plugin:react-hooks/recommended",
+    "react-app",
+    "plugin:react/recommended",
+    "plugin:json/recommended"
+  ],
+
+  "env": {
+    "es6": true,
+    "browser": true,
+    "node": true
+  },
+
+  "rules": {
+    "no-console": "off",
+    "react/jsx-filename-extension": [ 1, { "extensions": [".js", ".jsx"]}],
+    "react/jsx-uses-react": "error",
+    "react/jsx-uses-vars": "error",
+    "jsx-quotes": [1, "prefer-single"],
+    "quotes": [ 1, "single", { "avoidEscape": true }],
+    "react/prop-types": 0,
+    "react-hooks/rules-of-hooks": 1,
+    "react-hooks/exhaustive-deps": 1,
+    "json/*": [
+      "error",
+      {
+        "allowComments": true
+      }
+    ], 
+    "max-len": [1, 120, 2, {"ignoreComments": true}]
+  },
+
+  "plugins": ["react", "react-redux", "jsx-a11y", "html", "react-hooks" ],
+  
+  "parserOptions": {
+    "ecmaFeatures": { "jsx": true }, 
+    "ecmaVersion": 2020,
+    "sourceType": "module"
+  },
+
+  "settings": {
+    "react": {
+      "createClass": "createReactClass",
+      "pragma": "React", 
+      "fragment": "Fragment", 
+      "version": "detect", 
+      "flowVersion": "0.53" 
+    },
+    "linkComponents": [
+      "Hyperlink",
+      {
+        "name": "Link",
+        "linkAttribute": "to"
+      }
+    ]
+  }
+
+}
