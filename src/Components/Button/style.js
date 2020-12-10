@@ -1,15 +1,40 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 const Button = styled.button`
-  /* Adapt the colors based on primary prop */
-  background: ${(props) => (props.primary ? 'palevioletred' : 'white')};
-  color: ${(props) => (props.primary ? 'white' : 'palevioletred')};
+  display: inline-block;
+  border-radius: 8px;
+  padding: 0.5rem 0;
+  margin: 0.5rem 1rem;
+  width: 11rem;
+  background: transparent;
+  color: blue;
+  border: 5px solid blue;
 
-  font-size: 1em;
-  margin: 1em;
-  padding: 0.25em 1em;
-  border: 2px solid palevioletred;
-  border-radius: 3px;
+  ${(props) => props.primary && css`
+    background: green;
+    color: green;
+    border: 5px solid green;
+  `}
+  
+  ${(props) => props.danger && css`
+    background: red;
+    color: red;
+    border: 5px solid red;
+  `}
+
+    @media (min-width: 768px) { 
+    padding: 1rem 2rem;
+    width: 11rem;
+  }
+  
+  @media (min-width: 1024px) { 
+    padding: 1.5rem 2.5rem;
+    width: 13rem;
+  }
+
+  :hover {
+    border-color: green;
+  }
 `;
 
 export default Button;

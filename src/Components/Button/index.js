@@ -3,6 +3,7 @@ import Button from './style';
 
 const StyledButton = ({
   primary,
+  danger,
   color = 'white',
   onClick,
   type = 'button',
@@ -10,8 +11,8 @@ const StyledButton = ({
 }) => (
   <Button
     primary={primary}
+    danger={danger}
     style={{ backgroundColor: color }}
-    // eslint-disable-next-line react/button-has-type
     type={type}
     onClick={onClick}
   >

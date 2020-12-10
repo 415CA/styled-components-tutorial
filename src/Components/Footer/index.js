@@ -18,7 +18,7 @@ const Footer = () => (
   <div>
     Footer
     <Button>Button</Button>
-    <StyledButton color='green'>StyledButton</StyledButton>
+    <StyledButton primary>StyledButton</StyledButton>
   </div>
 );
 
