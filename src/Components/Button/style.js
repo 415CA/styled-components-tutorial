@@ -10,16 +10,18 @@ const Button = styled.button`
   color: blue;
   border: 5px solid blue;
 
-  ${(props) => props.primary && css`
-    background: green;
-    color: green;
-    border: 5px solid green;
+  ${(props) => props.primary
+    && css`
+      background: green;
+      color: green;
+      border: 5px solid green;
   `}
   
-  ${(props) => props.danger && css`
-    background: red;
-    color: red;
-    border: 5px solid red;
+  ${(props) => props.danger
+    && css`
+      background: red;
+      color: red;
+      border: 5px solid red;
   `}
 
     @media (min-width: 768px) { 
