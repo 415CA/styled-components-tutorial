@@ -1,10 +1,10 @@
-import { AppBar } from '@material-ui/core';
 import React from 'react';
+import StyledAppBar from './css';
 
-const StyledAppBar = ({ children }) => (
-  <AppBar>
-    {children}
-  </AppBar>
+const AppBar = ({ children }) => (
+  <StyledAppBar>
+    { children }
+  </StyledAppBar>
 );
 
-export default StyledAppBar;
+export default AppBar;

@@ -1,12 +1,12 @@
-import { Typography } from '@material-ui/core';
 import React from 'react';
+import StyledTypography from './css';
 
 const Logo = ({
   children, variant = 'h6', component = 'h1',
 }) => (
-  <Typography variant={variant} component={component}>
+  <StyledTypography variant={variant} component={component}>
     { children }
-  </Typography>
+  </StyledTypography>
 );
 
 export default Logo;

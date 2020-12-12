@@ -1,10 +1,10 @@
-import { Toolbar } from '@material-ui/core';
 import React from 'react';
+import StyledToolbar from './css';
 
-const StyledToolbar = ({ children }) => (
-  <Toolbar>
+const Toolbar = ({ children }) => (
+  <StyledToolbar>
     { children }
-  </Toolbar>
+  </StyledToolbar>
 );
 
-export default StyledToolbar;
+export default Toolbar;

@@ -1,9 +1,10 @@
 import React from 'react';
+import StyledHeader from './css';
 
 const Header = ({ children }) => (
-  <header>
-    {children}
-  </header>
+  <StyledHeader>
+    { children }
+  </StyledHeader>
 );
 
 export default Header;

@@ -17,8 +17,8 @@ const Button = styled.button`
 const Footer = () => (
   <div>
     Footer
-    {/* <Button>Button</Button>
-    <StyledButton primary>StyledButton</StyledButton> */}
+    <Button>Button</Button>
+    <StyledButton primary>StyledButton</StyledButton>
   </div>
 );
 

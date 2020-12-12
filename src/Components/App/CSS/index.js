@@ -3,11 +3,11 @@ import 'fontsource-roboto';
 
 const GlobalStyle = createGlobalStyle`
   body {
-    margin: 0;
+    margin: 10em;
     padding: 0;
-    // background: black;
+    background: white;
     font-family: Roboto;
-    // color: white;
+    color: black;
   }
 `;
 
