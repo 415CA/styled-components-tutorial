@@ -1,18 +1,19 @@
-import {
-  AppBar, IconButton, Toolbar, Typography,
-} from '@material-ui/core';
-import MenuIcon from '@material-ui/icons/Menu';
 import React from 'react';
+import Logo from '../Logo';
+import AppBar from './AppBar';
+import Header from './Header';
+import Toolbar from './Toolbar';
 
 const Navigation = () => (
-  <AppBar position='fixed' color='primary'>
-    <Toolbar>
-      <IconButton edge='start' color='inherit' aria-label='menu'>
-        <MenuIcon />
-      </IconButton>
-      <Typography variant='h6' />
-    </Toolbar>
-  </AppBar>
+  <Header>
+    <AppBar>
+      <Toolbar>
+        <Logo>
+          Rocco
+        </Logo>
+      </Toolbar>
+    </AppBar>
+  </Header>
 );
 
 export default Navigation;
