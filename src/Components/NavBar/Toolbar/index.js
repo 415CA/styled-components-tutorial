@@ -18,7 +18,7 @@ const DesktopToolbar = ({ headers }) => (
 );
 
 const MobileToolbar = ({
-  headers, drawerOpen, toggleDrawer, handleDrawerOpen, handleDrawerClose,
+  headers, drawerOpen, toggleDrawer,
 }) => (
   <Toolbar>
     <IconButton
@@ -27,7 +27,7 @@ const MobileToolbar = ({
         color: 'inherit',
         'aria-label': 'menu',
         'aria-haspopup': 'true',
-        onClick: handleDrawerOpen,
+        onClick: toggleDrawer,
       }}
     >
       <MenuIcon />
@@ -37,7 +37,6 @@ const MobileToolbar = ({
       drawerOpen={drawerOpen}
       toggleDrawer={toggleDrawer}
       headers={headers}
-      handleDrawerClose={handleDrawerClose}
     />
 
     <Logo>

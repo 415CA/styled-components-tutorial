@@ -10,9 +10,6 @@ const NavBar = ({ headers }) => {
     setDrawerOpen(!drawerOpen);
   };
 
-  const handleDrawerOpen = () => setDrawerOpen(true);
-  const handleDrawerClose = () => setDrawerOpen(false);
-
   useEffect(() => {
     const setResponsiveness = () => (
       window.innerWidth < 900
@@ -31,16 +28,13 @@ const NavBar = ({ headers }) => {
             headers={headers}
             drawerOpen={drawerOpen}
             toggleDrawer={toggleDrawer}
-            handleDrawerOpen={handleDrawerOpen}
-            handleDrawerClose={handleDrawerClose}
+
           />
         )
         : (
           <DesktopToolbar
             headers={headers}
             toggleDrawer={toggleDrawer}
-            handleDrawerOpen={handleDrawerOpen}
-            handleDrawerClose={handleDrawerClose}
           />
         )}
     </AppBar>

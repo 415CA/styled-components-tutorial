@@ -2,16 +2,18 @@ import React from 'react';
 import MenuButton from '../MenuButton';
 import StyledDrawer from './css';
 
-const DrawerA = ({ headers, drawerOpen, handleDrawerClose }) => (
+const Drawer = ({
+  headers, drawerOpen, toggleDrawer,
+}) => (
   <StyledDrawer
     {...{
       anchor: 'left',
       open: drawerOpen,
-      onClose: handleDrawerClose,
+      onClose: toggleDrawer,
     }}
   >
     <MenuButton headers={headers} />
   </StyledDrawer>
 );
 
-export default DrawerA;
+export default Drawer;
