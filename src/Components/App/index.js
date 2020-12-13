@@ -10,7 +10,7 @@ import LandingPage from '../../Pages/Landing';
 import NoMatchPage from '../../Pages/NoMatch';
 import Footer from '../Footer';
 import NavBar from '../NavBar';
-import Navigation from '../Navigation';
+// import Navigation from '../Navigation';
 import GlobalStyle from './CSS';
 
 const NoMatch = () => (

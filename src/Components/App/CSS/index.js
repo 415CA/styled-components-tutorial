@@ -3,7 +3,7 @@ import 'fontsource-roboto';
 
 const GlobalStyle = createGlobalStyle`
   body {
-    margin: 10em;
+    margin: 5em;
     padding: 0;
     background: white;
     font-family: Roboto;

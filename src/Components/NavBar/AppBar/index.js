@@ -1,3 +1,4 @@
+// import { AppBar as StyledAppBar } from '@material-ui/core';
 import React, { useEffect, useState } from 'react';
 import { DesktopToolbar, MobileToolbar } from '../Toolbar';
 import StyledAppBar from './css';
@@ -24,7 +25,7 @@ const AppBar = ({ headers }) => {
   }, []);
 
   return (
-    <StyledAppBar>
+    <StyledAppBar style={{ backgroundColor: '#400CCC' }}>
       { mobileView
         ? (
           <MobileToolbar
