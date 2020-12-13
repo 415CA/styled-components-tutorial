@@ -1,3 +1,4 @@
+import { StylesProvider } from '@material-ui/core/styles';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router } from 'react-router-dom';
@@ -7,9 +8,11 @@ import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Router>
-      <App />
-    </Router>
+    <StylesProvider injectFirst>
+      <Router>
+        <App />
+      </Router>
+    </StylesProvider>
   </React.StrictMode>,
   document.getElementById('root'),
 );

@@ -10,7 +10,6 @@ import LandingPage from '../../Pages/Landing';
 import NoMatchPage from '../../Pages/NoMatch';
 import Footer from '../Footer';
 import NavBar from '../NavBar';
-// import Navigation from '../Navigation';
 import GlobalStyle from './CSS';
 
 const NoMatch = () => (
@@ -25,7 +24,6 @@ const App = () => (
     <Router>
       <>
         <NavBar />
-        {/* <Navigation /> */}
         <Switch>
           <Route exact path={ROUTES.LANDING} component={LandingPage} />
           <Route exact path={ROUTES.HOME} component={HomePage} />

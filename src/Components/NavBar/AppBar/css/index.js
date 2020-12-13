@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { AppBar } from '@material-ui/core';
 
 const StyledAppBar = styled(AppBar)`
-  background: #400CCC;
+  background: blue;
   padding-right: 5em;
   padding-left: 7em;
   

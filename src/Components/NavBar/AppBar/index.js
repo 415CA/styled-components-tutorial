@@ -1,51 +1,10 @@
-// import { AppBar as StyledAppBar } from '@material-ui/core';
-import React, { useEffect, useState } from 'react';
-import { DesktopToolbar, MobileToolbar } from '../Toolbar';
+import React from 'react';
 import StyledAppBar from './css';
 
-const AppBar = ({ headers }) => {
-  const [drawerOpen, setDrawerOpen] = useState(false);
-  const [mobileView, setMobileView] = useState(false);
-
-  const toggleDrawer = () => {
-    setDrawerOpen(!drawerOpen);
-  };
-
-  const handleDrawerOpen = () => setDrawerOpen(true);
-  const handleDrawerClose = () => setDrawerOpen(false);
-
-  useEffect(() => {
-    const setResponsiveness = () => (
-      window.innerWidth < 900
-        ? setMobileView(true)
-        : setMobileView(false)
-    );
-    setResponsiveness();
-    window.addEventListener('resize', () => setResponsiveness());
-  }, []);
-
-  return (
-    <StyledAppBar style={{ backgroundColor: '#400CCC' }}>
-      { mobileView
-        ? (
-          <MobileToolbar
-            headers={headers}
-            drawerOpen={drawerOpen}
-            toggleDrawer={toggleDrawer}
-            handleDrawerOpen={handleDrawerOpen}
-            handleDrawerClose={handleDrawerClose}
-          />
-        )
-        : (
-          <DesktopToolbar
-            headers={headers}
-            toggleDrawer={toggleDrawer}
-            handleDrawerOpen={handleDrawerOpen}
-            handleDrawerClose={handleDrawerClose}
-          />
-        )}
-    </StyledAppBar>
-  );
-};
+const AppBar = ({ children }) => (
+  <StyledAppBar style={{ backgroundColor: '#400CCC' }}>
+    { children }
+  </StyledAppBar>
+);
 
 export default AppBar;
